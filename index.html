@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sabor Caseiro</title>
+
+<style>
+body{font-family:Arial;background:#fff5f2;text-align:center}
+.card{background:white;margin:10px;padding:12px;border-radius:10px;max-width:400px;margin:auto}
+button{background:#25D366;color:white;border:none;padding:14px;font-size:18px;border-radius:10px;margin-top:20px}
+</style>
+
+<script>
+function enviarPedido(){
+let itens=document.querySelectorAll('input:checked');
+let pedido="Olá, quero pedir:%0A";
+
+itens.forEach(function(item){
+pedido+=item.value+"%0A";
+});
+
+window.open("https://wa.me/5527995769228?text="+pedido);
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Sabor Caseiro</h1>
+<p>Marque os produtos</p>
+
+
+<div class="produto">
+
+
+<div class="card">
+<label><input type="checkbox" value="Torta de pão"> Torta de pão ---- R$ 10,00</label><br
+<p></p>
+<label><input type="checkbox" value="Torta de frango"> Torta de frango ---- R$ 8,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Torta de carne"> Torta de carne ---- R$ 8,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Pão recheado"> Pão recheado ---- R$ 8,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Empadão"> Empadão ---- R$ 15,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Empadinha"> Empadinha ---- R$ 3,50</label><br>
+<p></p>
+<label><input type="checkbox" value="Empadinha doce"> Empadinha doce ---- R$ 6,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Bombom aberto"> Bombom aberto---- R$ 15,00 </label><br>
+<p></p>
+<label><input type="checkbox" value="Doce prestígio"> Doce prestígio ---- R$ 10,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Manjar"> Manjar ---- R$ 10,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Cuscuz"> Cuscuz ---- R$ 8,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Pudim"> Pudim ---- R$ 6,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Mousse"> Mousse ---- R$ 7,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Bolo gelado de coco"> Bolo gelado de coco ---- R$ 10,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Pavê"> Pavê ---- R$ 10,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Biscoitos"> Biscoitos ---- R$ 8,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Hamburgão"> Hamburgão ---- R$ 10,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Pastel Assado"> Pastel Assado ---- R$ 8,00</label><br>
+<p></p>
+<label><input type="checkbox" value="Pote da Felicidade"> Pote da Felicidade ---- R$ 12,00</label><br>
+<p></p
+<label><input type="checkbox" value="Refrigerante Lata"> Refrigerante lata ---- R$ 7,00</label><br>
+<p></p
+<label><input type="checkbox" value="Suco Natural"> Suco Natural ---- R$ 8,00</label><br>
+<p></p
+<label><input type="checkbox" value="Agua mineral"> Água mineral ---- R$ 3,00</label><br>
+<p></p
+
+</div>
+
+<button onclick="enviarPedido()">Enviar pedido no WhatsApp</button>
+
+</body>
